@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
                             Toast.makeText(this, "Successfull Login", Toast.LENGTH_SHORT).show()
                             progressBarLogin.isVisible = false
 
-                            val intent = Intent(this, DashboardActivity::class.java)
+                            val intent = Intent(this, UploadActivity::class.java)
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(intent)
                         } else {
